@@ -30,7 +30,7 @@ jobs:
           name: behave test
           command: |
             . venv/bin/activate
-            behave
+            behave test/features
       # Step 5: Sonar cloud report
       - sonarcloud/scan
 workflows:
